@@ -51,6 +51,7 @@ class BookItemDetails extends Component {
       const updatedData = {
         bookDetails: {
           id: fetchedData.book_details.id,
+          title: fetchedData.book_details.title,
           authorName: fetchedData.book_details.author_name,
           coverPic: fetchedData.book_details.cover_pic,
           aboutBook: fetchedData.book_details.about_book,
@@ -112,16 +113,14 @@ class BookItemDetails extends Component {
     } = bookDetails
 
     return (
-      <div className="book-details-card-container">
-        <div className="book-details-container">
+      <div className="combined-container">
+        <div className="book-details-card-container">
           <img className="book-details-image" alt={title} src={coverPic} />
-          <div className="container1">
-            <h1 className="book-title" key={title}>
-              {title}
-            </h1>
-            <p className="book-details-author-name">{authorName}</p>
+          <div className="book-details-info-container">
+            <h1 className="book-title">{title}</h1>
+            <p className="book-details-author-name">by {authorName}</p>
             <div className="book-details-rating-container">
-              <p className="book-details-abg-rating-heading">Avg rating</p>
+              <p className="book-details-avg-rating-heading">Avg rating</p>
               <BsFillStarFill className="book-details-star-icon" />
               <p className="book-details-rating">{rating}</p>
             </div>
@@ -130,8 +129,9 @@ class BookItemDetails extends Component {
             </p>
           </div>
         </div>
-        <div className="container2">
-          <hr name="horizontal-line" />
+
+        <div className="author-book-container">
+          <hr className="horizontal-line" />
           <div>
             <h1 className="about-heading">About Author</h1>
             <p className="about-paragraph">{aboutAuthor}</p>

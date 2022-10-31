@@ -6,8 +6,8 @@
 
 .home-page-bg-container {
   flex-direction: row;
-  background-color: rgb(237, 237, 242);
-  flex-grow: grow;
+  background-color: aliceblue;
+  flex-grow: 1;
 
   padding: 35px;
 }
@@ -35,6 +35,7 @@
   border-radius: 6px;
   border: none;
   font-size: 15px;
+  cursor: pointer;
   margin-bottom: 10px;
 }
 
@@ -122,6 +123,7 @@
   background-color: transparent;
   border-width: 0px;
   border-radius: 10px;
+  cursor: pointer;
 }
 .slick-prev:before,
 .slick-next:before {

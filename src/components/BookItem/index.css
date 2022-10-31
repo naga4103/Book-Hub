@@ -3,8 +3,6 @@
   flex-direction: row;
 
   margin-bottom: 15px;
-  border-width: 1px;
-  border-style: solid;
 }
 
 .book-item-cover-pic {
@@ -32,7 +30,6 @@
   flex-direction: column;
 
   padding: 5px;
-  border-width: 1px;
 }
 
 .book-item-title {
@@ -48,9 +45,6 @@
   justify-content: flex-start;
   align-items: center;
   margin-top: 0px;
-
-  border-width: 1px;
-  border-style: solid;
 }
 .book-item-avg-rating {
   font-size: 14px;
@@ -62,6 +56,7 @@
 .book-item-btn {
   background-color: transparent;
   border-width: 0px;
+  cursor: pointer;
 }
 .book-item-start-icon {
   font-size: 14px;
@@ -103,7 +98,7 @@
     font-size: 10px;
     margin-top: 0px;
 
-    font-family: roboto;
+    font-family: 'Roboto';
   }
 
   .book-item-avg-rating {
